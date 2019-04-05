@@ -1,10 +1,10 @@
 import React from 'react'
 
-let Form = () => (
-  <div>
-    <input type="text" />
+let Form = props => (
+  <form onSubmit={props.getRecipe}>
+    <input type="text" name="recipeName"/>
     <button>Search</button>
-  </div>
+  </form>
 )
 
 export default Form;
