@@ -22,7 +22,7 @@ const Recipes = props => (
                   Publisher: <span>{recipe.publisher}</span>
                 </p>
               </div>
-              <button className="recipe__button">View recipe</button>
+              <button className="recipe_buttons">View recipe</button>
             </div>
           </div>
         );
