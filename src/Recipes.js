@@ -17,9 +17,14 @@ const Recipes = props => (
                 alt={recipe.image_url}
               />
               <div className="recipe__text">
-                <h5 className="recipes_title">{recipe.title}</h5>
+                <h5 className="recipes_title">
+                  {recipe.title.length < 20
+                    ? `${recipe.title}`
+                    : `${recipe.title.substring(0, 25)}...`}
+                </h5>
                 <p className="recipes__subtitle">
-                  Publisher: <span>{recipe.publisher}</span>
+                  Publisher:
+                  <span>{recipe.publisher}</span>
                 </p>
               </div>
               <button className="recipe_buttons">View recipe</button>
